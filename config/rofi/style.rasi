@@ -1,0 +1,38 @@
+* {
+  background:     #1e1e2e;
+  foreground:     #cdd6f4;
+  border-color:   #89b4fa;
+  selected:       #89b4fa;
+  font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+  location: center;
+  anchor: center;
+  width: 40%;
+  border: 2px;
+  border-color: @border-color;
+  background-color: @background;
+}
+
+mainbox {
+  spacing: 10px;
+  padding: 20px;
+}
+
+listview {
+  lines: 10;
+  spacing: 5px;
+  scrollbar: true;
+  fixed-height: false;
+}
+
+element {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+element selected {
+  background-color: @selected;
+  text-color: @background;
+}

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Random Wallpaper
+Exec=~/.config/hypr/scripts/random_wallpaper.sh
+Type=Application
+Icon=preferences-desktop-wallpaper
+Terminal=false

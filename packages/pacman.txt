@@ -1,0 +1,150 @@
+# ────────────────────────────────
+# Core utilities
+# ────────────────────────────────
+git
+base-devel
+zsh
+wget
+curl
+zip
+unzip
+nano
+bat
+sudo
+man-db
+rsync
+gnupg
+lsb-release
+dialog
+
+# ────────────────────────────────
+# Network
+# ────────────────────────────────
+networkmanager
+openssh
+network-manager-applet
+reflector
+
+# ────────────────────────────────
+# Drivers & system tools
+# ────────────────────────────────
+intel-ucode
+mesa
+vulkan-intel
+libva-intel-driver
+libvdpau-va-gl
+pipewire
+pipewire-audio
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+wireplumber
+bluez
+bluez-utils
+tlp
+btrfs-progs
+snapper
+dosfstools
+exfatprogs
+ntfs-3g
+udiskie
+btop
+
+# ────────────────────────────────
+# Hyprland and Wayland environment
+# ────────────────────────────────
+hyprland
+waybar
+rofi
+swww
+swaync
+xdg-desktop-portal-hyprland
+xdg-utils
+xdg-user-dirs
+wl-clipboard
+wl-clip-persist
+qt5-wayland
+qt6-wayland
+polkit-kde-agent
+hypridle
+hyprlock
+sddm
+
+# ────────────────────────────────
+# File managers and viewers
+# ────────────────────────────────
+nautilus
+nautilus-image-converter
+sushi
+yazi
+loupe
+file-roller
+
+# ────────────────────────────────
+# Terminal
+# ────────────────────────────────
+ghostty
+
+# ────────────────────────────────
+# Fonts
+# ────────────────────────────────
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-liberation
+ttf-dejavu
+ttf-droid
+ttf-jetbrains-mono
+ttf-cascadia-code
+ttf-fira-code
+ttf-opensans
+ttf-roboto
+ttf-font-awesome
+ttf-nerd-fonts-symbols
+ttf-hack
+ttf-ubuntu-font-family
+
+# ────────────────────────────────
+# Icon themes
+# ────────────────────────────────
+papirus-icon-theme
+tela-circle-icon-theme-standard
+pop-icon-theme
+
+# ────────────────────────────────
+# GTK theming
+# ────────────────────────────────
+materia-gtk-theme
+orchis-theme
+breeze-gtk
+
+# ────────────────────────────────
+# UI tools
+# ────────────────────────────────
+qt5ct
+qt6ct
+
+# ────────────────────────────────
+# Fingerprint support
+# ────────────────────────────────
+fprintd
+libfprint
+
+# ────────────────────────────────
+# Media control
+# ────────────────────────────────
+playerctl
+
+# ────────────────────────────────
+# Applications
+# ────────────────────────────────
+vlc
+docker
+docker-compose
+gimp
+audacity
+qbittorrent
+zathura
+zathura-pdf-mupdf
+libreoffice-fresh
+code

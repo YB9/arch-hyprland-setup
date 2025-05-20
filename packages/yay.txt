@@ -1,0 +1,19 @@
+# ────────────────────────────────
+# AUR Utilites
+# ────────────────────────────────
+clipse-bin
+eww
+wlogout
+hyprshot
+nautilus-admin-gtk4
+nautilus-open-any-terminal
+
+# ────────────────────────────────
+# AUR Applications
+# ────────────────────────────────
+ungoogled-chromium-bin
+spotify
+spicetify-cli
+github-desktop-bin
+overskride
+postman-bin
