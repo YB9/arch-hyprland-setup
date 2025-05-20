@@ -33,6 +33,7 @@ sudo pacman -S --noconfirm \
 
 # Applications (Official repos)
 sudo pacman -S --noconfirm \
+  vlc \
   docker \
   docker-compose \
   gimp \
@@ -41,6 +42,7 @@ sudo pacman -S --noconfirm \
   zathura \
   zathura-pdf-mupdf \
   libreoffice-fresh
+
 
 # Applications (AUR)
 yay -S --noconfirm \
