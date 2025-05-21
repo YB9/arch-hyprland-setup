@@ -2,6 +2,7 @@ configuration {
   font: "JetBrainsMono Nerd Font 12";
   show-icons: true;
   icon-theme: "Papirus-Dark";
-  theme: "~/.config/rofi/style.rasi";
   display-drun: "  Run: ";
 }
+
+@theme "~/.config/rofi/style.rasi"
