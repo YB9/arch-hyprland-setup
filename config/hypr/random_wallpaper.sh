@@ -23,7 +23,7 @@ if [ -n "$random_wall" ]; then
   fi
 
   # Replace any existing "color: ..." line in style.css
-  sed -i "s/^.*color: *#[0-9a-fA-F]\{6\};/  color: $text_color;/" ~/.config/waybar/style.css
+  sed -i "s/^ *color: *#[0-9a-fA-F]\{6\};$/  color: $text_color;/" ~/.config/waybar/style.css
 
   # Reload waybar
   pkill waybar && waybar &

@@ -20,8 +20,8 @@ dialog
 # ────────────────────────────────
 # Network
 # ────────────────────────────────
-networkmanager
 openssh
+networkmanager
 network-manager-applet
 reflector
 
