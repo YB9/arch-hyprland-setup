@@ -3,7 +3,6 @@
 # ────────────────────────────────
 clipse-bin
 eww
-wlogout
 hyprshot
 nautilus-admin-gtk4
 nautilus-open-any-terminal

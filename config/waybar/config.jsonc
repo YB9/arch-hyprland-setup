@@ -1,0 +1,44 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "modules-left": ["group/power"],
+  "modules-center": ["clock"],
+
+  "group/power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "power-child",
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/power-suspend",
+      "custom/power-reboot",
+      "custom/power-shutdown"
+    ]
+  },
+
+  "custom/power-suspend": {
+    "format": "⏾ Suspend",
+    "tooltip": "Suspend",
+    "on-click": "~/.config/waybar/suspend-and-lock.sh"
+  },
+
+  "custom/power-reboot": {
+    "format": "⭮ Reboot",
+    "tooltip": "Reboot",
+    "on-click": "systemctl reboot"
+  },
+
+  "custom/power-shutdown": {
+    "format": "⏻ Shutdown",
+    "tooltip": "Shutdown",
+    "on-click": "systemctl poweroff"
+  },
+
+  "clock": {
+    "format": "  {:%d %b %Y    %I:%M %p}",
+    "interval": 60
+  }
+}

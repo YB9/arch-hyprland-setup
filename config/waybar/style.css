@@ -1,0 +1,27 @@
+* {
+  border: none;
+  font-family: "Cascadia Code", monospace;
+  color: black;
+  min-height: 40px;
+}
+
+window#waybar {
+  background-color: rgba(120, 120, 120, 0.12);
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#group-power {
+  margin: 0 12px;
+}
+
+.power-child {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 80px;
+  transition: background-color 0.2s ease;
+}
