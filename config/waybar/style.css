@@ -1,27 +1,115 @@
+/* ========== GLOBAL STYLES ========== */
 * {
   border: none;
   font-family: "Cascadia Code", monospace;
+  font-size: 14px;
+  font-weight: 700;
   color: black;
-  min-height: 40px;
 }
 
 window#waybar {
   background-color: rgba(120, 120, 120, 0.12);
 }
 
+tooltip {
+  background-color: rgba(245, 235, 225, 0.8);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: 1px solid rgba(40, 20, 20, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== CENTER ========== */
 #clock {
   font-weight: bold;
 }
 
-#group-power {
-  margin: 0 12px;
+/* ========== LEFT ========== */
+#custom-session-lock,
+#custom-session-logout,
+#custom-session-reboot,
+#custom-session-poweroff {
+  margin: 0 2px;
+  padding: 0 12px;
+  border-radius: 3px;
 }
 
-.power-child {
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  min-width: 80px;
-  transition: background-color 0.2s ease;
+#custom-session-lock {
+  margin-left: 24px;
+  padding-right: 18px;
+}
+
+#custom-session-logout {
+  margin-left: 2px;
+}
+
+#custom-session-poweroff {
+  padding-right: 21px;
+}
+
+#custom-session-lock:hover,
+#custom-session-logout:hover,
+#custom-session-reboot:hover,
+#custom-session-poweroff:hover {
+  background-color: rgba(230, 220, 215, 0.2);
+}
+
+#workspaces {
+  background: rgba(248, 246, 243, 0.15);
+  border: 2px solid rgba(40, 20, 20, 0.15);
+  color: #000;
+  margin: 3px 0 1px 16px;
+  border-radius: 5px;
+}
+
+#workspaces button {
+  margin: 2px 4px;
+  padding: 0 3px;
+  padding-top: 5px;
+  border: 0px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+#workspaces button.active {
+  padding: 0 12px;
+  padding-top: 5px;
+  background: rgba(245, 235, 225, 0.85);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  background: rgba(248, 246, 243, 0.3);
+}
+
+#window {
+  margin-left: 21px;
+  margin-top: 5px;
+}
+
+/* ========== RIGHT  ========== */
+#tray,
+#battery,
+#custom-notifications {
+  padding: 0 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#custom-notifications {
+  font-size: 18px;
+}
+
+#tray:hover,
+#battery:hover,
+#custom-notifications:hover {
+  background-color: rgba(228, 221, 214, 0.12);
+}
+
+#battery {
+  font-size: 20px;
+  padding: 0 24px;
 }

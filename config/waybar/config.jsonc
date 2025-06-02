@@ -2,43 +2,99 @@
   "layer": "top",
   "position": "top",
 
-  "modules-left": ["group/power"],
+  "modules-left": ["group/session", "hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
+  "modules-right": ["tray", "battery", "custom/notifications"],
 
-  "group/power": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "power-child",
-      "transition-left-to-right": true
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": true,
+    "all-outputs": false,
+    "format": "{}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
     },
-    "modules": [
-      "custom/power-suspend",
-      "custom/power-reboot",
-      "custom/power-shutdown"
-    ]
+    "persistent-workspaces": {
+      "*": 5
+    }
   },
 
-  "custom/power-suspend": {
-    "format": "⏾ Suspend",
-    "tooltip": "Suspend",
-    "on-click": "~/.config/waybar/suspend-and-lock.sh"
-  },
-
-  "custom/power-reboot": {
-    "format": "⭮ Reboot",
-    "tooltip": "Reboot",
-    "on-click": "systemctl reboot"
-  },
-
-  "custom/power-shutdown": {
-    "format": "⏻ Shutdown",
-    "tooltip": "Shutdown",
-    "on-click": "systemctl poweroff"
+  "hyprland/window": {
+    "format": "{class}",
+    "rewrite": {
+      "(.*) - zsh": "> [$1]"
+    }
   },
 
   "clock": {
     "format": "  {:%d %b %Y    %I:%M %p}",
-    "interval": 60
+    "interval": 60,
+    "tooltip": false
+  },
+
+  "group/session": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/session-lock",
+      "custom/session-logout",
+      "custom/session-reboot",
+      "custom/session-poweroff"
+    ]
+  },
+
+  "custom/session-lock": {
+    "format": "<span font_desc='MesloLGS Nerd Font'></span>",
+    "on-click": "hyprlock",
+    "tooltip": false
+  },
+
+  "custom/session-logout": {
+    "format": "<span font_desc='Font Awesome 6 Free'></span>",
+    "on-click": "hyprctl dispatch exit",
+    "tooltip": false
+  },
+
+  "custom/session-reboot": {
+    "format": "<span font_desc='Noto Color Emoji'>🔄</span>",
+    "on-click": "systemctl reboot",
+    "tooltip": false
+  },
+
+  "custom/session-poweroff": {
+    "format": "",
+    "on-click": "systemctl poweroff",
+    "tooltip": false
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+
+  "battery": {
+    "format": "{icon}",
+    "interval": 10,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format-charging": "",
+    "format-plugged": "",
+    "format-discharging": "{icon}",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true,
+    "tooltip-format": "{capacity}%"
+  },
+
+  "custom/notifications": {
+    "format": "<span font_desc='Font Awesome 6 Free Solid'></span>",
+    "on-click": "swaync-client -t",
+    "tooltip": false
   }
 }
